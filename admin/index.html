@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="load" style="display: none;">
+        <div>
+            <p>loading
+            <div id="load1"></div>
+            <div id="load2"></div>
+            <div id="load3"></div>
+            </p>
+        </div>
+    </div>
+    <main id="login_wrap">
+        <div class="main">
+            <div id="Form_Title">
+                <h1>Đăng nhập</h1>
+            </div>
+            <form id="Form_Login">
+                <input type="text" placeholder="Tài khoản" name="tk">
+                <input type="password" placeholder="Mật khẩu" name="mk">
+            </form>
+            <div id="Form_Submit">
+                <button id="login">Đăng nhập</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let url = 'https://script.google.com/macros/s/AKfycbwKBsOP0BtPs3taDZ1zKA-8nPiQh3iqr_rJh-OKek4NA39XLEt_wP7Ez6FKJOaFU9wO/exec'
+        const currentUrl = window.location.href;
+        const urls = new URL(currentUrl);
+        const rootPath = `${urls.protocol}//${urls.host}`;
+
+        if (!getCookie("vamnaone")) { } else Check()
+
+        function getCookie(name) {
+            var cookieName = name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(cookieName) == 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return "";
+        }
+        let type = ''
+        document.querySelectorAll('#Chonncc>div>div').forEach((t) => {
+            t.onclick = () => {
+                type = t.getAttribute('data-g')
+                document.querySelector('#Chonncc').setAttribute('style', 'display:none')
+                document.querySelector('#login_wrap').setAttribute('style', 'display:block')
+            }
+        })
+        document.querySelector('#Form_Title p').onclick = () => {
+            type = ''
+            document.querySelector('#Chonncc').setAttribute('style', 'display:block')
+            document.querySelector('#login_wrap').setAttribute('style', 'display:none')
+        }
+        document.querySelector('#login').onclick = () => {
+            document.querySelector('.load').setAttribute('style', 'display:block')
+            let tk = document.querySelector('#Form_Login>input[name="tk"]').value
+            let mk = document.querySelector('#Form_Login>input[name="mk"]').value
+            fetch(`${url}?tk=${tk}&mk=${mk}&action=${type}`, { method: 'Get' })
+                .then(response => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector('.load').setAttribute('style', 'display:none')
+                    if (data.status == 'error') {
+                        alert(data.message)
+                    }
+                    else if (data.status != 'error') {
+
+                        var date = new Date();
+                        date.setTime(date.getTime() + (4 * 60 * 60 * 1000));
+                        expires = "; expires=" + date.toUTCString();
+                        document.cookie = 'vamnaone' + "=" + data.token + '|' + tk + expires + "; path=/";
+                        document.cookie = 'type' + "=" + type + expires + "; path=/";
+                        if (type == 'teacher') {
+                            console.log(data.url);
+                            window.location.href = `${rootPath + data.url}`
+                        } else if (type == 'parents') {
+                            document.cookie = 'id' + "=" + data.student + expires + "; path=/";
+                            document.cookie = 'detail' + "=" + data.detail + expires + "; path=/";
+                            document.cookie = 'classN' + "=" + data.classN + expires + "; path=/";
+                            window.location.href = `${rootPath}/Parents`
+                        }
+
+                    }
+                })
+                .catch(error => alert('Lỗi: ' + error));
+        }
+    </script>
+
+</body>
+
+</html>
