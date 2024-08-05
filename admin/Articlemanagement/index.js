@@ -1,7 +1,8 @@
 const vam = document.querySelector.bind(document);
 const vams = document.querySelectorAll.bind(document);
 let wid = screen.width
-
+var o = window.location.origin;
+var c = window.location.href
 if (wid < 1100) {
     $('.main__container').addClass('hiden')
     vam('.topbar__leading').onclick = () => {

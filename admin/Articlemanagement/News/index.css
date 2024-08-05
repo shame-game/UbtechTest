@@ -1,0 +1,188 @@
+#blog {
+    height: 100vh;
+    width: 100%;
+}
+
+#blog>.nav {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+#blog>.nav>h1 {
+    font-size: 28px;
+}
+
+#blog>.main {
+    padding: 24px;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+#blog>.main>.wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.137)
+}
+
+#blog>.main>.wrap>.wrap_nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+
+#blog>.main>.wrap>.wrap_title {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.06);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+#blog>.main>.wrap>.wrap_title p {
+    flex: 1;
+}
+
+#blog>.main>.wrap>.wrap_title p:nth-child(1),
+#blog>.main>.wrap>.wrap_title p:nth-last-child(1) {
+    flex: .4;
+}
+
+
+#blog>.main>.wrap>.title>input {
+    padding: 15px 24px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: thin solid rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
+
+.bt {
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--color-vamm);
+    color: white;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.wrapadd>.add {
+    padding: 5px 15px;
+    background-color: var(--color-vamm);
+    color: white;
+    border-radius: 15px;
+    width: max-content;
+    margin: 15px;
+    cursor: context-menu;
+}
+
+.wrapadd {
+    position: relative;
+    width: max-content;
+}
+
+.wrapadd>.moreadd::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.root {
+    height: calc(100% - 60px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.root::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapadd>.add:hover+.moreadd,
+.wrapadd>.moreadd:hover {
+    opacity: 1;
+}
+
+.post-input {
+    border: none;
+    outline: none;
+    margin: 24px;
+    width: calc(100% - 48px);
+    height: max-content !important;
+    overflow: hidden;
+}
+
+.root img {
+    width: 50%;
+    object-fit: cover;
+    margin-left: 24px;
+}
+
+.post-input {
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: block;
+}
+
+.placeholder {
+    color: #999;
+    font-style: italic;
+    cursor: auto;
+    background-color: white;
+}
+
+.wrapadd>.moreadd {
+    opacity: 0;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    width: max-content;
+    border: thin solid var(--color-vamm);
+    border-radius: 5px;
+}
+
+.wrapadd>.moreadd>div {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.wrapadd>.moreadd>div:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+}
+
+.bt:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+#blog>.main>.wrap>.wrap_main {
+    height: calc(100% - 120px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#blog>.main>.wrap>.wrap_main::-webkit-scrollbar {
+    width: 5px;
+}
+
+#blog>.main>.wrap>.wrap_main::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: var(--color-vamm);
+}
