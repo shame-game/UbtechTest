@@ -12,6 +12,20 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.blogcreate {
+    justify-content: space-between !important;
+}
+
+.blogcreate>span {
+    margin: 0 24px;
+    padding: 4px 15px;
+    background-color: var(--color-vamm);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 #blog>.nav>h1 {
     font-size: 28px;
@@ -185,4 +199,21 @@
 #blog>.main>.wrap>.wrap_main::-webkit-scrollbar-thumb {
     width: 5px;
     background-color: var(--color-vamm);
+}
+
+/* bõx */
+.boxlist {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 5px 15px;
+}
+
+.boxlist>.banner img {
+    width: 100px;
+    aspect-ratio: 12/9;
+    object-fit: cover;
+    height: auto;
 }

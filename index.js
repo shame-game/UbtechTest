@@ -6,7 +6,6 @@ document.querySelectorAll('div[data-icon-v="v4"]').forEach((t) => {
     t.style.removeProperty('before');
     t.innerHTML = `<i class="fa-solid fa-chevron-left" style="color: ${t.getAttribute('color')};font-size: ${t.getAttribute('font')}px;" aria-hidden="true"></i>`
 })
-console.log('hello');
 
 document.querySelector('#footer-vam').innerHTML =
     `<footer class="et-l et-l--footer">
