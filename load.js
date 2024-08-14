@@ -46,7 +46,7 @@ fetchSheet.fetch({ gSheetId: url }).then((rows) => {
             </div>
             <div class="eael-entry-content">
               <div class="eael-grid-post-excerpt">
-                <p class="g">
+                <p class="vam_text_max3p">
                   ${f()}
                 </p > <a
     href="${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}"
