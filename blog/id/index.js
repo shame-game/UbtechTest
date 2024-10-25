@@ -34,6 +34,8 @@ async function load(f) {
       items += `<div style="width: 639px" class="wp-caption aligncenter">
       <img src="${element.split('|')[1]}" width="629" height="473">
       <p class="wp-caption-text">${element.split('|')[2]}</p></div>`
+    } else if (element.split('|')[0] == 'title') {
+      items += `<h1 class="title" style="font-size: 24px;font-weight: 600">${element.split('|')[1]}</h1>`
     }
 
   });
@@ -54,5 +56,7 @@ async function load(f) {
   })
   document.querySelector('.vamtag').innerText += ` ${f['TAG']}`
   document.querySelector('.vamcategory>ul').innerHTML = l
+  items += `<h1 class="p2"><b>CONTACT US:</b></h1>
+  <p class="p2"><span style="color: #000000"><span class="s1"><a style="color: #000000" href="https://www.facebook.com/ubtechvietnam"><span style="text-decoration: underline">Facebook</span></a></span>&nbsp;|&nbsp;<a style="color: #000000" href="https://www.linkedin.com/company/ubtechvietnam/"><span class="s1"><span style="text-decoration: underline">Linkedin</span></span></a>&nbsp;|&nbsp;<span style="text-decoration: underline"><a style="color: #000000;text-decoration: underline" href="https://www.tiktok.com/@ubtechvietnam"><span class="s1">Tiktok</span></a>&nbsp;</span>|&nbsp;<span style="text-decoration: underline"><a style="color: #000000;text-decoration: underline" href="https://www.youtube.com/@ubtechvietnam"><span class="s1">Youtube</span></a></span></span></p>`
   document.querySelector('#vamobody').innerHTML = items
 }
