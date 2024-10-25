@@ -13,12 +13,16 @@ function processString(input) {
 fetchSheet
   .fetch({ gSheetId: url }).then((rows) => {
     for (let i in rows) {
-      if (currentURL == `${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}`) load(rows[i])
-      break
+      if (currentURL.slice(0, `${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}`.length) == `${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}`) {
+        load(rows[i])
+        break
+      }
     }
   })
 
 async function load(f) {
+  console.log(f);
+
   document.querySelector('.entry-title').innerText = f['Tiêu đề']
   document.querySelector('.vamtime').innerText = f['Thời gian']
   document.querySelector('.vamdm').innerText = f['Danh mục']
