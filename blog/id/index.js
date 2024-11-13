@@ -31,12 +31,14 @@ async function load(f) {
     if (element.split('|')[0] == 'content') {
       items += `<div class="v1"><p>${element.split('|')[1]}</p></div>`
     } else if (element.split('|')[0] == 'img') {
+      if (element.split('|')[2]) e = `<p class="wp-caption-text">${element.split('|')[2]}</p>`
+      else e = ''
       items += `<div style="width: 639px" class="wp-caption aligncenter">
       <img src="${element.split('|')[1]}" width="629" height="473">
-      <p class="wp-caption-text">${element.split('|')[2]}</p></div>`
+      ${e}</div>`
     } else if (element.split('|')[0] == 'title') {
       items += `<h1 class="title" style="font-size: 24px;font-weight: 600">${element.split('|')[1]}</h1>`
-    }else if (element.split('|')[0] == 'a') {
+    } else if (element.split('|')[0] == 'a') {
       items += `<a href="${element.split('|')[1]}" target="_blank" style="font-size: 24px;font-weight: 600">${element.split('|')[2]}</a>`
     }
 
