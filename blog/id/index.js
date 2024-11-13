@@ -36,6 +36,8 @@ async function load(f) {
       <p class="wp-caption-text">${element.split('|')[2]}</p></div>`
     } else if (element.split('|')[0] == 'title') {
       items += `<h1 class="title" style="font-size: 24px;font-weight: 600">${element.split('|')[1]}</h1>`
+    }else if (element.split('|')[0] == 'a') {
+      items += `<a href="${element.split('|')[1]}" target="_blank" style="font-size: 24px;font-weight: 600">${element.split('|')[2]}</a>`
     }
 
   });
