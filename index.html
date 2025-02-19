@@ -260,6 +260,88 @@
 			margin-top: 0;
 			padding: 1.25em 2.375em
 		}
+
+		.slider-container {
+			max-width: 1200px;
+			margin: 50px auto;
+			overflow: hidden;
+			position: relative;
+		}
+
+		#slider {
+			display: flex;
+			position: relative;
+			cursor: grab;
+			transition: transform 0.3s ease-out;
+			will-change: transform;
+		}
+
+		#slider.active {
+			cursor: grabbing;
+			transition: none;
+		}
+
+		#slider.paused {
+			animation-play-state: paused;
+		}
+
+		.logo-item {
+			min-width: 200px;
+			padding: 20px;
+			flex-shrink: 0;
+			opacity: 0;
+			animation: fadeIn 0.5s ease forwards;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		.logo-item img {
+			width: 100%;
+			height: 100px;
+			object-fit: contain;
+			pointer-events: none;
+			/*filter: grayscale(100%);*/
+			transition: filter 0.3s ease;
+		}
+
+		/*.logo-item:hover img {
+      filter: grayscale(0%);
+    }*/
+		@media (max-width: 480px) {
+			.logo-item {
+				min-width: 120px;
+			}
+
+			.logo-item img {
+				height: 60px;
+			}
+		}
+
+		@media (hover: none) {
+			.logo-item:hover img {
+				transform: none;
+			}
+		}
+
+		.loading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: none;
+		}
+
+		.slider-container[data-loading="true"] .loading {
+			display: block;
+		}
 	</style>
 	<link rel='stylesheet' id='wc-blocks-vendors-style-css'
 		href='wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-styled01d.css?ver=7.8.3'
@@ -9388,8 +9470,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 												</div>
 											</div>
 										</section>-->
-										<h1 class="m1225">KHÁCH HÀNG & ĐỐI TÁC:<BR>Ứng dụng AI & Robotics từ UBTECH trong hoạt động thực tế</h1>
-										<section
+										<h1 class="m1225">KHÁCH HÀNG & ĐỐI TÁC:<BR>Ứng dụng AI & Robotics từ UBTECH trong hoạt động thực tế
+										</h1>
+										<!-- <section
 											class="elementor-section elementor-top-section elementor-element elementor-element-45b5aff4 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
 											data-id="45b5aff4" data-element_type="section"
 											data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
@@ -9445,7 +9528,76 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 													</div>
 												</div>
 											</div>
-										</section>
+										</section> -->
+										<div class="slider-container" data-loading="true">
+											<div class="loading">Loading...</div>
+											<div id="slider">
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1nyL_lq784JyipbXz409FvjwgZG8ejmj_" alt="Logo 1"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1x3S2wOUpBrYGxAKWOg9J_RtzQe139CvU" alt="Logo 2"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1hqjBz3ht6iF4JUNqek_gFZNEUZOsxv4o" alt="Logo 3"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1bcqjlWNgawikjqQt-ua6q3K6X5Ty8ZY1" alt="Logo 4"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/11uM-ldKoFQeFIuJR67vfVaJxd109rXzh" alt="Logo 5"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1KVLf3dOxq5DN6LMIzTKjvqtsdJ7cbTjl" alt="Logo 6"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1QRWTn0vq4_VyErfGV_pSPWOKUiF3wvEo" alt="Logo 7"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1Ajupr-6TNzMKulhlq8iIaYqljsozpRNY" alt="Logo 8"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/12S9ocUAC64kwtfkODAqxazEoMbLbUPap" alt="Logo 9"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1uXwP-j4KQNejcdoN8xkEzDg1u3NORWE_" alt="Logo 10"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1sxlFS4mgIUbRcszOAYhmDlMwM7KCdlJp" alt="Logo 11"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1Gce5jrk6zLiok1W-CXMyTHhRZ-Uy4gLH" alt="Logo 12"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1dK9RNEZH1bmOruUMHGOW18uxsTaYC4T-" alt="Logo 13"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1UpV9oHo0e2rjoUnz_l4QFQfuxwJCx6MD" alt="Logo 14"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1HWWnwIfKn9hDXnFwoJdZgHqokKwNm9_x" alt="Logo 15"
+														loading="lazy">
+												</div>
+												<div class="logo">
+													<img src="https://lh3.googleusercontent.com/d/1ah4cg1FnRpiWDKkFoCoQpeZBgpnwh2wz" alt="Logo 16"
+														loading="lazy">
+												</div>
+											</div>
+										</div>
 										<style>
 											.carousel {
 												display: flex;
@@ -10628,6 +10780,108 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	<script src="https://cdn.statically.io/gh/tr1nh/fetch-sheet.js/master/fetch-sheet.min.js"></script>
 	<script src="./index.js"></script>
 	<script src="./load.js"></script>
+	<script>
+			(() => {
+				const slider = document.getElementById('slider');
+				const container = document.querySelector('.slider-container');
+				let isDown = false;
+				let startX;
+				let scrollLeft;
+				let position = 0;
+				let isPaused = false;
+				let animationFrameId;
+				const scrollSpeed = window.innerWidth <= 768 ? 0.3 : 0.5;
+				const options = {
+					rootMargin: '50px',
+					threshold: 0.01
+				};
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							const img = entry.target.querySelector('img');
+							if (img && img.dataset.src) {
+								img.src = img.dataset.src;
+								img.removeAttribute('data-src');
+							}
+							observer.unobserve(entry.target);
+						}
+					});
+				}, options);
+
+				function initializeSlider() {
+					const items = [...slider.children];
+					items.forEach(item => {
+						const clone = item.cloneNode(true);
+						slider.appendChild(clone);
+						observer.observe(item);
+						observer.observe(clone);
+					});
+					container.dataset.loading = "false";
+				}
+
+				function autoScroll() {
+					if (!isPaused) {
+						position -= scrollSpeed;
+						slider.style.transform = `translateX(${position}px)`;
+						const firstSetWidth = slider.children.length / 2 * slider.children[0].offsetWidth;
+						if (-position >= firstSetWidth) {
+							position = 0;
+						}
+					}
+					animationFrameId = requestAnimationFrame(autoScroll);
+				}
+				const handleStart = (e) => {
+					isDown = true;
+					slider.classList.add('active');
+					startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+					scrollLeft = position;
+					cancelAnimationFrame(animationFrameId);
+				};
+				const handleMove = (e) => {
+					if (!isDown) return;
+					e.preventDefault();
+					const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+					const walk = (x - startX);
+					position = scrollLeft + walk;
+					slider.style.transform = `translateX(${position}px)`;
+				};
+				const handleEnd = () => {
+					isDown = false;
+					slider.classList.remove('active');
+					requestAnimationFrame(autoScroll);
+				};
+				slider.addEventListener('mousedown', handleStart);
+				slider.addEventListener('mousemove', handleMove);
+				slider.addEventListener('mouseup', handleEnd);
+				slider.addEventListener('mouseleave', handleEnd);
+				slider.addEventListener('touchstart', handleStart);
+				slider.addEventListener('touchmove', handleMove);
+				slider.addEventListener('touchend', handleEnd);
+				slider.addEventListener('mouseenter', () => isPaused = true);
+				slider.addEventListener('mouseleave', () => isPaused = false);
+				document.addEventListener('visibilitychange', () => {
+					if (document.hidden) {
+						cancelAnimationFrame(animationFrameId);
+					} else {
+						requestAnimationFrame(autoScroll);
+					}
+				});
+				slider.querySelectorAll('img').forEach(img => {
+					img.onerror = () => {
+						img.src = 'fallback-image.jpg';
+						img.alt = 'Logo loading failed';
+					};
+				});
+				window.addEventListener('load', () => {
+					initializeSlider();
+					requestAnimationFrame(autoScroll);
+				});
+				window.addEventListener('unload', () => {
+					cancelAnimationFrame(animationFrameId);
+					observer.disconnect();
+				});
+			})();
+	</script>
 </body>
 
 </html>
