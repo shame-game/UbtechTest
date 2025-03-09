@@ -6,7 +6,6 @@ document.querySelectorAll('div[data-icon-v="v4"]').forEach((t) => {
 	t.style.removeProperty('before');
 	t.innerHTML = `<i class="fa-solid fa-chevron-left" style="color: ${t.getAttribute('color')};font-size: ${t.getAttribute('font')}px;" aria-hidden="true"></i>`
 })
-console.log(document.querySelector('#header_m'));
 
 document.querySelector('#header_m').innerHTML = `
 <header class="et-l et-l--header">
