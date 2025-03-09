@@ -633,7 +633,9 @@ document.querySelector('#header_m').innerHTML = `
 																THIỆU</span><i
 																class='ubermenu-sub-indicator fas fa-angle-down'></i></a>
 														<ul
-															class="ubermenu-submenu ubermenu-submenu-id-8133 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width">
+															class="ubermenu-submenu ubermenu-submenu-id-8133 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width"
+															style="    background-color: #1e73be;
+    border: 1px solid #ffffff;">
 															<li id="menu-item-8132"
 																class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-8132 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto">
 																<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
