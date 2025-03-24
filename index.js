@@ -634,8 +634,7 @@ document.querySelector('#header_m').innerHTML = `
 																class='ubermenu-sub-indicator fas fa-angle-down'></i></a>
 														<ul
 															class="ubermenu-submenu ubermenu-submenu-id-8133 ubermenu-submenu-type-auto ubermenu-submenu-type-mega ubermenu-submenu-drop ubermenu-submenu-align-full_width"
-															style="    background-color: #1e73be;
-    border: 1px solid #ffffff;">
+															style="    background-color: #1e73be;  border: 1px solid #ffffff;">
 															<li id="menu-item-8132"
 																class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-page ubermenu-item-8132 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-1 ubermenu-column ubermenu-column-auto">
 																<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
@@ -736,7 +735,7 @@ document.querySelector('#header_m').innerHTML = `
 																			<li id="menu-item-26800"
 																				class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-product ubermenu-item-26800 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-3 ubermenu-column ubermenu-column-auto">
 																				<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
-																					href="https://ubtechvietnam.edu.vn/https://ubtechvietnam.edu.vn/product/ai-ugot/index.html"><span
+																					href="https://ubtechvietnam.edu.vn/product/ai-ugot/index.html"><span
 																						class="ubermenu-target-title ubermenu-target-text"><img
 																							decoding="async"
 																							src="https://lh3.googleusercontent.com/d/1FgnTOunOS3puCpghVYDUsY651fkua_UW"
