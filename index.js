@@ -85,6 +85,17 @@ document.querySelector('#header_m').innerHTML = `
 																					</p>
 																				</a>
 																			</li>
+																			<li id="menu-item-348"
+																				class="second-level et_pb_menu_page_id-344 menu-item menu-item-type-post_type menu-item-object-product menu-item-348">
+																				<a href="https://ubtechvietnam.edu.vn/product/cadebot-l100/index.html"><img
+																						decoding="async"
+																						src="https://lh3.googleusercontent.com/d/1uCBMQ1S5IkI-uMYvTrbLm3YIruXKkOnp"
+																						alt="Alternate Text"
+																						width="120px" />
+																					<p style="align-self:center;">Cadebot L100
+																					</p>
+																				</a>
+																			</li>
 																		</ul>
 																	</li>
 																	<li id="menu-item-308"
@@ -717,6 +728,20 @@ document.querySelector('#header_m').innerHTML = `
 																							width="100px" />
 																						<p style="line-height: 40px;">
 																							Cruzr
+																						</p>
+																					</span></a>
+																			</li>
+																			<li id="menu-item-4420"
+																				class="second-level ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-product ubermenu-item-4420 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-3 ubermenu-column ubermenu-column-auto">
+																				<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
+																					href="https://ubtechvietnam.edu.vn/product/cadebot-l100/index.html"><span
+																						class="ubermenu-target-title ubermenu-target-text"><img
+																							decoding="async"
+																							src="https://lh3.googleusercontent.com/d/1uCBMQ1S5IkI-uMYvTrbLm3YIruXKkOnp"
+																							alt="Alternate Text"
+																							width="100px" />
+																						<p style="line-height: 40px;">
+																							Cadebot L100
 																						</p>
 																					</span></a>
 																			</li>
