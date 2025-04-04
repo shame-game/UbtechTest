@@ -157,7 +157,7 @@ document.querySelector('#header_m').innerHTML = `
 																						decoding="async"
 																						src="https://lh3.googleusercontent.com/d/10iW5rVSC6C8LJSYv-nnoMycM9Nl6iLzF
 																						alt="Alternate Text"
-																						width="120px" />
+																						width="60px" />
 																					<p style="align-self:center;">
 																						walker E
 																					</p>
@@ -846,7 +846,7 @@ document.querySelector('#header_m').innerHTML = `
 																							decoding="async"
 																							src="https://lh3.googleusercontent.com/d/10iW5rVSC6C8LJSYv-nnoMycM9Nl6iLzF"
 																							alt="Alternate Text"
-																							width="100px" />
+																							width="50px" />
 																						<p style="line-height: 40px;">
 																							Walker E</p>
 																					</span></a>
