@@ -151,6 +151,18 @@ document.querySelector('#header_m').innerHTML = `
 																					</p>
 																				</a>
 																			</li>
+																			<li id="menu-item-8671"
+																				class="second-level et_pb_menu_page_id-8653 menu-item menu-item-type-post_type menu-item-object-product menu-item-8671">
+																				<a href="https://ubtechvietnam.edu.vn/product/walkerE/index.html"><img
+																						decoding="async"
+																						src="https://lh3.googleusercontent.com/d/1SEj7W9nXw8Axw8MUv8-z2Wk-9PhTPtpq"
+																						alt="Alternate Text"
+																						width="120px" />
+																					<p style="align-self:center;">
+																						walker E
+																					</p>
+																				</a>
+																			</li>
 																		</ul>
 																	</li>
 																	<li id="menu-item-8016"
@@ -757,8 +769,9 @@ document.querySelector('#header_m').innerHTML = `
 																				class='ubermenu-sub-indicator fas fa-angle-down'></i></a>
 																		<ul
 																			class="ubermenu-tab-content-panel ubermenu-column ubermenu-column-4-5 ubermenu-submenu ubermenu-submenu-id-4434 ubermenu-submenu-type-tab-content-panel">
-																			<li id="menu-item-26800"
-																				class="ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-product ubermenu-item-26800 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-3 ubermenu-column ubermenu-column-auto">
+			
+																			<li id="menu-item-4421"
+																				class="second-level ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-product ubermenu-item-4421 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-3 ubermenu-column ubermenu-column-auto">
 																				<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
 																					href="https://ubtechvietnam.edu.vn/product/ai-ugot/index.html"><span
 																						class="ubermenu-target-title ubermenu-target-text"><img
@@ -766,7 +779,8 @@ document.querySelector('#header_m').innerHTML = `
 																							src="https://lh3.googleusercontent.com/d/1FgnTOunOS3puCpghVYDUsY651fkua_UW"
 																							alt="Alternate Text"
 																							width="100px" />
-																						<p style="line-height: 40px;">AI
+																						<p style="line-height: 40px;">
+																							AI
 																							UGOT</p>
 																					</span></a>
 																			</li>
@@ -822,6 +836,19 @@ document.querySelector('#header_m').innerHTML = `
 																							width="100px" />
 																						<p style="line-height: 40px;">
 																							WalkerS1</p>
+																					</span></a>
+																			</li>
+																			<li id="menu-item-8670"
+																				class="second-level ubermenu-item ubermenu-item-type-post_type ubermenu-item-object-product ubermenu-item-8670 ubermenu-item-auto ubermenu-item-header ubermenu-item-level-3 ubermenu-column ubermenu-column-auto">
+																				<a class="ubermenu-target ubermenu-item-layout-default ubermenu-item-layout-text_only"
+																					href="https://ubtechvietnam.edu.vn/product/walkerE/index.html"><span
+																						class="ubermenu-target-title ubermenu-target-text"><img
+																							decoding="async"
+																							src="https://lh3.googleusercontent.com/d/1SEj7W9nXw8Axw8MUv8-z2Wk-9PhTPtpq"
+																							alt="Alternate Text"
+																							width="100px" />
+																						<p style="line-height: 40px;">
+																							Walker E</p>
 																					</span></a>
 																			</li>
 																		</ul>
