@@ -12,8 +12,10 @@ function processString(input) {
 }
 fetchSheet
   .fetch({ gSheetId: url }).then((rows) => {
+
+    
     for (let i in rows) {
-      if (currentURL.slice(0, `${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}`.length) == `${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}`) {
+      if (currentURL.slice(0, `${rootURL}/blog/id/?${rows[i].ID}`.length) == `${rootURL}/blog/id/?${rows[i].ID}`) {
         load(rows[i])
         break
       }

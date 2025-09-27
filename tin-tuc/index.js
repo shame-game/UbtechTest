@@ -21,7 +21,7 @@ fetchSheet.fetch({ gSheetId: url }).then((rows) => {
           <div class="eael-entry-media">
             <div class="eael-entry-overlay fade-in">
               <i class="" aria-hidden="true"></i><a
-                href="${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}"></a>
+                href="${rootURL}/blog/id/?${rows[i].ID}"></a>
             </div>
             <div class="eael-entry-thumbnail eael-image-ratio">
               <img width="354" height="266"
@@ -35,7 +35,7 @@ fetchSheet.fetch({ gSheetId: url }).then((rows) => {
             <header class="eael-entry-header">
               <h2 class="eael-entry-title">
                 <a class="eael-grid-post-link"
-                  href="${rootURL}/blog/id/?${rows[i].ID}=${processString(rows[i]['Tiêu đề'])}">${rows[i]['Tiêu đề']}</a>
+                  href="${rootURL}/blog/id/?${rows[i].ID}">${rows[i]['Tiêu đề']}</a>
               </h2>
             </header>
             <div class="eael-entry-header-after">
