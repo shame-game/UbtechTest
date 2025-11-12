@@ -22,7 +22,7 @@ document.querySelector('#header_m').innerHTML = `
 
 
 										<a href="https://ubtechvietnam.edu.vn/index.html"><span class="et_pb_image_wrap "><img decoding="async"
-													src="https://www.ubtechvietnam.com/wp-content/uploads/2021/04/LogoUB2.svg"
+													src="wp-content/uploads/2021/04/LogoUB2.svg"
 													alt="" title="LogoUB2" class="wp-image-8996" /></span></a>
 									</div>
 								</div>
@@ -622,7 +622,7 @@ document.querySelector('#header_m').innerHTML = `
 
 
 										<a href="https://ubtechvietnam.edu.vn/index.html"><span class="et_pb_image_wrap "><img decoding="async"
-													src="https://www.ubtechvietnam.com/wp-content/uploads/2021/04/LogoUB2.svg"
+													src="wp-content/uploads/2021/04/LogoUB2.svg"
 													alt="" title="LogoUB2" class="wp-image-8996" /></span></a>
 									</div>
 								</div>
@@ -1355,7 +1355,7 @@ document.querySelector('#footer-vam').innerHTML =
                                 <p><span class="conatct_link"><span
                                     class="conatct_link mail_link"><strong>Email:</strong> <a
                                         rel="nofollow noopener" target="_blank"
-                                        href="mailto:webubtechvietnam@gmail.com">webubtechvietnam@gmail.com</a></span></span>
+                                        href="mailto:ubtechvietnam@ipptech.com.vn">ubtechvietnam@ipptech.com.vn</a></span></span>
                                 </p>
                                 <p><strong>Văn phòng Phía Nam</strong>: <a
                                     href="https://goo.gl/maps/ir5TsXD7UszYxREi8">Tầng 3, tòa nhà Centec,
