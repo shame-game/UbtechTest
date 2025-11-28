@@ -130,9 +130,9 @@
 		}
 
 		.ubt-top-section__image img {
-			width: auto;
-			height: 400px;
-			display: block;
+			width: auto !important;
+			height: 400px !important;
+			display: block !important;
 			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 			transition: transform 0.2s;
 		}
@@ -160,10 +160,77 @@
 		.ubt-divider {
 			text-align: center;
 			color: #1AA0FF;
-			font-size: 30px;
+			font-size: 26px;
 			font-weight: 700;
 			letter-spacing: 0.5px;
 			margin: 28px 0 24px;
+		}
+
+		.ubt-middle-section {
+			margin: 48px 0;
+		}
+
+		.ubt-middle-section__intro {
+			font-size: 16px;
+			line-height: 1.8;
+			text-align: justify;
+			margin: 0 50px 20px 50px;
+		}
+
+		.ubt-middle-section__list {
+			font-size: 16px;
+			line-height: 1.8;
+			text-align: justify;
+			margin: 0 50px 20px 70px;
+			list-style-position: outside;
+		}
+
+		.ubt-middle-section__list li {
+			margin-bottom: 12px;
+		}
+
+		.ubt-middle-section__images {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 28px;
+			margin: 32px 50px;
+		}
+
+		.ubt-middle-section__image {
+			width: 100%;
+			cursor: pointer;
+		}
+
+		.ubt-middle-section__image img {
+			width: 100%;
+			height: auto;
+			display: block;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+			transition: transform 0.2s;
+		}
+
+		.ubt-middle-section__image img:hover {
+			transform: scale(1.02);
+		}
+
+		.ubt-middle-section__footer {
+			font-size: 16px;
+			line-height: 1.8;
+			text-align: justify;
+			margin: 20px 50px 0 50px;
+		}
+
+		.ubt-middle-section__footer p {
+			margin-bottom: 16px;
+		}
+
+		.ubt-middle-section__footer ol {
+			margin: 16px 0 16px 20px;
+			list-style-position: outside;
+		}
+
+		.ubt-middle-section__footer li {
+			margin-bottom: 12px;
 		}
 
 		.ubt-commit {
@@ -205,9 +272,9 @@
 		}
 
 		.ubt-commit__image img {
-			width: auto;
-			height: 400px;
-			display: block;
+			width: auto !important;
+			height: 400px !important;
+			display: block !important;
 			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 			transition: transform 0.2s;
 		}
@@ -283,6 +350,18 @@
 				order: 2;
 			}
 
+			.ubt-middle-section__images {
+				grid-template-columns: 1fr;
+				margin: 32px 20px;
+			}
+
+			.ubt-middle-section__intro,
+			.ubt-middle-section__list,
+			.ubt-middle-section__footer {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+
 			.ubt-commit {
 				grid-template-columns: 1fr;
 				gap: 24px;
@@ -290,6 +369,8 @@
 
 			.ubt-commit__text {
 				order: 1;
+				margin-left: 20px;
+				margin-right: 20px;
 			}
 
 			.ubt-commit__image {
@@ -300,6 +381,12 @@
 			.ubt-commit__image img {
 				width: 100%;
 				height: auto;
+			}
+
+			.ubt-lead,
+			.ubt-note {
+				margin-left: 20px;
+				margin-right: 20px;
 			}
 		}
 	</style>
@@ -8970,7 +9057,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 													<figure class="ubt-top-section__image"
 														onclick="openModal('img/T2.png')">
 														<img src="img/T2.png" alt="UBTECH Agreement Confirmation"
-															style="margin-left:50px;height:400px">
+															style="margin-left:50px">
 													</figure>
 													<div class="ubt-top-section__text">
 														<p class="ubt-lead">
@@ -8995,14 +9082,77 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 													</div>
 												</div>
 
+												<h3 class="ubt-divider">CHỨNG NHẬN KẾT QUẢ THẨM ĐỊNH CỦA BỘ GD&ĐT - VIỆN
+													KHOA HỌC GIÁO DỤC VIỆT NAM</h3>
+
+												<div class="ubt-middle-section">
+													<p class="ubt-middle-section__intro">
+														Các giải pháp giáo dục do IPPTech phân phối độc quyền chính hãng
+														UBTECH được đảm bảo về chất lượng và tính phù hợp theo các tiêu
+														chuẩn cao của Việt Nam:
+													</p>
+													<ul class="ubt-middle-section__list">
+														<li>Chương trình và sản phẩm UBTECH Việt Nam đã được Viện Khoa
+															học Giáo dục Việt Nam – Bộ Giáo dục và Đào tạo thẩm định
+															theo quyết định số 16/QĐTTGDPTGQ, được đánh giá và công nhận
+															chất lượng, đáp ứng tiêu chí sư phạm và tính phù hợp với học
+															sinh Việt Nam.</li>
+														<li>IPPG đã hợp tác với Đại học Quốc gia TP.HCM hoàn thiện
+															chương trình đào tạo AI, được Bộ Khoa học và Công nghệ thẩm
+															định và phê duyệt, đảm bảo tính ứng dụng cao và phù hợp với
+															định hướng chuyển đổi số Quốc Gia.</li>
+													</ul>
+
+													<div class="ubt-middle-section__images">
+														<figure class="ubt-middle-section__image"
+															onclick="openModal('img/TD2.png')">
+															<img src="img/TD2.png" alt="Chứng nhận 1">
+														</figure>
+														<figure class="ubt-middle-section__image"
+															onclick="openModal('img/TD1.png')">
+															<img src="img/TD1.png" alt="Chứng nhận 2">
+														</figure>
+														<figure class="ubt-middle-section__image"
+															onclick="openModal('img/TD3.png')">
+															<img src="img/TD3.png" alt="Chứng nhận 3">
+														</figure>
+													</div>
+
+													<div class="ubt-middle-section__footer">
+														<p>
+															Khách hàng mua các Giải pháp Giáo dục AI & Robotics từ
+															IPPG/IPPTech sẽ nhận được sự đảm bảo tuyệt đối về nguồn gốc
+															hợp pháp, chất lượng được kiểm định, và quyền sử dụng độc
+															quyền nội dung giáo trình được UBTECH bảo hộ toàn cầu.
+														</p>
+														<p>
+															Chúng tôi xin lưu ý Quý Khách hàng và các Tổ chức Giáo dục:
+														</p>
+														<ol>
+															<li>Chỉ có IPPG/IPPTech là đơn vị duy nhất có đầy đủ giấy
+																phép và quyền sử dụng độc quyền (Exclusive licenses) đối
+																với Giáo trình AI & Robotics có bản quyền của UBTECH tại
+																Việt Nam.</li>
+															<li>Việc mua sản phẩm từ các kênh không chính thức sẽ đối
+																diện với rủi ro về hàng giả/hàng xám, mất quyền lợi bảo
+																hành quốc tế, và quan trọng nhất là vi phạm bản quyền
+																nội dung giáo trình do UBTECH và IPPG bảo hộ.</li>
+														</ol>
+														<p>
+															UBTECH Việt Nam cam kết duy trì tính minh bạch tuyệt đối,
+															đồng hành cùng ngành giáo dục Việt Nam với những giải pháp
+															công nghệ tiên tiến và chính hãng.
+														</p>
+													</div>
+												</div>
+
 												<h3 class="ubt-divider">CAM KẾT VỚI KHÁCH HÀNG</h3>
 
 												<div class="ubt-commit">
 													<div class="ubt-commit__text">
 														<p>
-
-															<i style="
-    color: #1AA0FF;"><b>UBTECH Robotics Corp.</b></i> đã cấp Giấy chứng nhận ủy quyền phân phối
+															<i style="color: #1AA0FF;"><b>UBTECH Robotics Corp.</b></i>
+															đã cấp Giấy chứng nhận ủy quyền phân phối
 															chính thức (Letter of Authorized Distributor), công nhận
 															IMEX PAN PACIFIC GROUP (IPPG)
 															được độc quyền phân phối các sản phẩm và giải pháp dưới
@@ -9019,7 +9169,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 													<figure class="ubt-commit__image"
 														onclick="openModal('img/TH3.png')">
 														<img src="img/TH3.png" alt="UBTECH Confidential Certificate"
-															style="margin-right: 50px;height:400px">
+															style="margin-right: 50px;">
 													</figure>
 												</div>
 
@@ -9036,6 +9186,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 											<span class="modal-close">&times;</span>
 											<img class="modal-content" id="modalImage">
 										</div>
+
+
 										<section
 											class="elementor-section elementor-top-section elementor-element elementor-element-4b3be13b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 											data-id="4b3be13b" data-element_type="section">
