@@ -12,6 +12,8 @@ function processString(input) {
 }
 let i = 0
 fetchSheet.fetch({ gSheetId: url }).then((rows) => {
+  console.log(rows);
+  
   let items = ''
   for (let i in rows) {
     if (i > 10) break
